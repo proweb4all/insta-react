@@ -54,5 +54,8 @@
             "descr": "Hello! If you want to drink some delicious smoothies - just call me!",
             "id": "6"
         }
-    ]
+    ],
+    "profile": {
+      "name": "proweb4all"
+    }
 }
