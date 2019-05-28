@@ -13,7 +13,7 @@ export default class Users extends Component {
     this.updateUsers();
   }
   updateUsers() {
-    this.InstaService.getAllPosts()
+    this.InstaService.getAllUsers()
       .then(this.onUsersLoaded)
       .catch(this.onError);
   }
@@ -31,7 +31,7 @@ export default class Users extends Component {
 
   renderItems(arr) {
     return arr.map(item => {
-      const { name, altname, photo, src, alt, descr, id } = item;
+      const { name, altname, photo, id } = item;
       return (
         <div key={id} className="user">
           <User
