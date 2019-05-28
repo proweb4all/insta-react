@@ -1,6 +1,10 @@
 export default class InstaService {
   constructor() {
-    this._apiBase = "http://localhost:3000/";
+    // this._apiBase = "http://localhost:3000/";
+    // this._apiBase = "https://github.com/proweb4all/insta-react/blob/master/db.json";
+    this._apiBase = "https://my-json-server.typicode.com/proweb4all/insta-react/";
+    // this._apiBase = "/";
+    
   }
 
   getResource = async url => {

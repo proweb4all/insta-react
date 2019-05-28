@@ -38,7 +38,8 @@ export default class Users extends Component {
             photo={photo}
             altname={altname}
             name={name}
-            min={id == "1" ? false : true}
+            min
+            // min={id == "1" ? false : true}
           />
         </div>
       );
@@ -52,44 +53,14 @@ export default class Users extends Component {
     }
     const items = this.renderItems(users);
     return (
-      <>
+      <div>
+        <User
+          photo="https://cdn1.flamp.ru/46947dfb3b4f79a8ec455ca53aea72ae_300_300.jpg"
+          altname="I am"
+          name="Monster"
+        />
         <div className="users__block">{items}</div>
-      </>
+      </div>
     );
   }
-  // return (
-  //   <div className="right">
-  //     <User
-  //       photo="https://cdn2.f-cdn.com/ppic/76420944/logo/14167560/3yf40/profile_logo_.jpg"
-  //       altname="Feodor"
-  //       name="Feodor"
-  //     />
-  //     <div className="users__block">
-  //       <User
-  //         photo="https://a.d-cd.net/4afd96u-200.jpg"
-  //         altname="Skull"
-  //         name="Skull"
-  //         min
-  //       />
-  //       <User
-  //         photo="https://lastfm-img2.akamaized.net/i/u/ar0/4bd14bf41efb4e38cec00c45fbdd1849.png"
-  //         altname="Panda"
-  //         name="Panda"
-  //         min
-  //       />
-  //       <User
-  //         photo="https://a.d-cd.net/4afd96u-200.jpg"
-  //         altname="Skull"
-  //         name="Skull"
-  //         min
-  //       />
-  //       <User
-  //         photo="https://lastfm-img2.akamaized.net/i/u/ar0/4bd14bf41efb4e38cec00c45fbdd1849.png"
-  //         altname="Panda"
-  //         name="Panda"
-  //         min
-  //       />
-  //     </div>
-  //   </div>
-  // );
 }

@@ -140,7 +140,7 @@ header {
 }
 
 .users__block {
-    /* margin-top: 20px; */
+    margin-top: 20px;
     padding: 20px;
     width: 265px;
     min-height: 260px;
